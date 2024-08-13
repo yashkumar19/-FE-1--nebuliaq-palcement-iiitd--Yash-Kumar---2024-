@@ -16,7 +16,8 @@
 **Components:**
 
    **1) Graph Initialization:**
-           **1)Cytoscape Integration:** Use the Cytoscape library to initialize and render the graph with nodes and edges.
+         
+   **a)Cytoscape Integration:** Use the Cytoscape library to initialize and render the graph with nodes and edges.
            **2)Dynamic Styling:** Apply styles to nodes and edges, including borders that reflect error rates and success metrics.
              
   **2)Data Management:**
