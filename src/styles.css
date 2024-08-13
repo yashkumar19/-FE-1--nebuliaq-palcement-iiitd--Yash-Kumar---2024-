@@ -1,24 +1,49 @@
-/* Update the background color of the main container */
-#graph-container {
-    flex: 2;
-    border: 1px solid #ddd;
-    background-color: #f0f0f0; /* Change this to your desired background color */
-    border-radius: 40px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-}
-
 /* Ensure the app container has the correct styling */
 .app-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stack items vertically */
     padding: 20px;
-    background-color: #316aa2; /* Change this to your desired background color */
+    background-color: #316aa2; /* Background color for the whole container */
+    height: 100vh; /* Full viewport height */
 }
+
+/* Styling for the app header */
+.app-header {
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.app-header h1 {
+    font-size: 36px; /* Font size for the header text */
+    color: #ffffff; /* White color for the text */
+    background-color: #316aa2; /* Background color matching the app container */
+    padding: 10px; /* Space inside the header */
+    border-radius: 8px; /* Rounded corners for the header background */
+    border: 2px solid #d01818; /* Border around the header */
+    border-width: 5px;
+}
+
+/* Container for the graph and info panel */
+.graph-container {
+    display: flex;
+    flex: 1;
+    gap: 20px; /* Space between the graph and info panel */
+}
+
+/* Styling for the graph container */
+#graph-container {
+    flex: 2;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0; /* Background color for the graph */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 /* General styling for smoother transitions */
 .node-class{
+    border-width: 4px; 
+    border-style: solid; 
     transition-property: background-color, border-color, width, height, line-color;
     transition-duration: 0.3s; /* Adjust this duration for smoother or faster transitions */
     transition-timing-function: ease-in-out; /* Smooth transition effect */
@@ -60,4 +85,3 @@
     font-weight: bold;
     color: #555;
 }
-
