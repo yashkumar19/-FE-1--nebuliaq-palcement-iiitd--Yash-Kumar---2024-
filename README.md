@@ -5,10 +5,13 @@
 **The Service Map Visualizer is a project designed to graphically represent a system of interconnected services and their interactions. Here’s an overview of the assignment, including its objectives and components:**
 
 **Objectives:**
-        **1)Visual Representation:** Create a dynamic, interactive graph that visualizes services and their connections, enabling users to understand the      
-          relationships and performance metrics of various services in a system.
-        **2)Error and Success Metrics:** Represent service performance visually, with specific emphasis on error rates. This includes using colored borders around              nodes to indicate the success vs. error ratio.
-        **3)Interactivity:** Provide a user-friendly interface that allows users to interact with the graph, such as clicking on nodes to view detailed service                 information.
+
+   **1)Visual Representation:** Create a dynamic, interactive graph that visualizes services and their connections, enabling users to understand the      
+       relationships and performance metrics of various services in a system.
+       
+   **2)Error and Success Metrics:** Represent service performance visually, with specific emphasis on error rates. This includes using colored borders around              nodes to indicate the success vs. error ratio.
+   
+   **3)Interactivity:** Provide a user-friendly interface that allows users to interact with the graph, such as clicking on nodes to view detailed service                 information.
 
 **Components:**
 
