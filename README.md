@@ -18,20 +18,29 @@
    **1) Graph Initialization:**
          
    **a)Cytoscape Integration:** Use the Cytoscape library to initialize and render the graph with nodes and edges.
-           **2)Dynamic Styling:** Apply styles to nodes and edges, including borders that reflect error rates and success metrics.
+   
+   **b)Dynamic Styling:** Apply styles to nodes and edges, including borders that reflect error rates and success metrics.
              
   **2)Data Management:**
-           **1)Context Management:** Utilize React Context (MapContext) to manage and provide service and connection data across the application.
-           **2)Data Retrieval:** Fetch service and connection data from JSON files or an API.
+           
+   **a)Context Management:** Utilize React Context (MapContext) to manage and provide service and connection data across the application.
+  
+   **b)Data Retrieval:** Fetch service and connection data from JSON files or an API.
              
   **3)UI Components:**
-           **1)NodeEdgeForm:** A form component for adding nodes and edges to the graph. Includes fields for node attributes (ID, label, category, etc.) and edge                  attributes (source, target, requests, delay).
-           **2)ServiceInfoPanel:** Displays detailed information about a selected service. Shows metrics such as requests, failures, and success rate.
-           **3)SystemMapView:** Renders the graph and handles user interactions, such as clicking on nodes to select them.
+           
+   **a)NodeEdgeForm:** A form component for adding nodes and edges to the graph. Includes fields for node attributes (ID, label, category, etc.) and edge                  attributes (source, target, requests, delay).
+   
+   **b)ServiceInfoPanel:** Displays detailed information about a selected service. Shows metrics such as requests, failures, and success rate.
+   
+   **c)SystemMapView:** Renders the graph and handles user interactions, such as clicking on nodes to select them.
 
    **4)Styling:**
-           **1)CSS Styling:** Use CSS to style various elements of the application, including the graph container, service info panel, and node/edge styles.
-           **2)Error Representation:** Implement visual indicators (e.g., colored borders) to represent error rates, with red indicating 100% errors and green                     indicating 100% success.
+   
+   **1aCSS Styling:** Use CSS to style various elements of the application, including the graph container, service info panel, and node/edge styles.
+   
+   **b)Error Representation:** Implement visual indicators (e.g., colored borders) to represent error rates, with red indicating 100% errors and green                     indicating 100% success.
              
    **5)Error Representation:**
-          **1)Border Color Calculation:** Dynamically adjust the border color of nodes based on the error ratio. Use a color gradient from green (for success) to                 red (for errors).
+          
+   **a)Border Color Calculation:** Dynamically adjust the border color of nodes based on the error ratio. Use a color gradient from green (for success) to                 red (for errors).
