@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "id": "ent1",
+      "label": "Authentication Service",
+      "category": "REST API",
+      "environment": "production",
+      "location": "us-central",
+      "requests": 1200,
+      "failures": 7
+    },
+    {
+      "id": "ent2",
+      "label": "Billing Service",
+      "category": "gRPC",
+      "environment": "staging",
+      "location": "europe-west",
+      "requests": 980,
+      "failures": 12
+    },
+    {
+      "id": "ent3",
+      "label": "User Profile Service",
+      "category": "REST API",
+      "environment": "production",
+      "location": "asia-southeast",
+      "requests": 1500,
+      "failures": 10
+    },
+    {
+      "id": "ent4",
+      "label": "Notification Service",
+      "category": "gRPC",
+      "environment": "staging",
+      "location": "us-west",
+      "requests": 1300,
+      "failures": 4
+    },
+    {
+      "id": "ent5",
+      "label": "Payment Gateway",
+      "category": "SOAP API",
+      "environment": "production",
+      "location": "europe-north",
+      "requests": 1100,
+      "failures": 15
+    },
+    {
+      "id": "ent6",
+      "label": "Analytics Service",
+      "category": "GraphQL",
+      "environment": "staging",
+      "location": "south-america",
+      "requests": 1400,
+      "failures": 5
+    }
+  ],
+  "links": [
+    {
+      "source": "ent1",
+      "target": "ent2",
+      "requests": 850,
+      "delay": 90
+    },
+    {
+      "source": "ent1",
+      "target": "ent3",
+      "requests": 700,
+      "delay": 50
+    },
+    {
+      "source": "ent3",
+      "target": "ent4",
+      "requests": 600,
+      "delay": 30
+    },
+    {
+      "source": "ent4",
+      "target": "ent5",
+      "requests": 500,
+      "delay": 45
+    },
+    {
+      "source": "ent2",
+      "target": "ent5",
+      "requests": 400,
+      "delay": 20
+    },
+    {
+      "source": "ent5",
+      "target": "ent6",
+      "requests": 300,
+      "delay": 70
+    },
+    {
+      "source": "ent6",
+      "target": "ent1",
+      "requests": 250,
+      "delay": 60
+    }
+  ]
+}
