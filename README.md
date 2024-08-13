@@ -11,6 +11,7 @@
         **3)Interactivity:** Provide a user-friendly interface that allows users to interact with the graph, such as clicking on nodes to view detailed service                 information.
 
 **Components:**
+
    **1) Graph Initialization:**
            **1)Cytoscape Integration:** Use the Cytoscape library to initialize and render the graph with nodes and edges.
            **2)Dynamic Styling:** Apply styles to nodes and edges, including borders that reflect error rates and success metrics.
